@@ -5,7 +5,7 @@ from sqlalchemy import MetaData, Integer, String, TIMESTAMP, ForeignKey, Table, 
 metadata = MetaData()
 
 roles = Table(
-    "Roles",
+    "roles",
     metadata,
     Column("id", Integer, primary_key=True),
     Column("Name", String, nullable=False),
@@ -13,7 +13,7 @@ roles = Table(
 )
 
 users = Table(
-    "Users",
+    "users",
     metadata,
     Column("id", Integer, primary_key=True),
     Column("email", String, nullable=False),
