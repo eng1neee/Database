@@ -2,12 +2,12 @@ from datetime import datetime
 from enum import Enum
 from typing import List, Optional
 from fastapi import FastAPI, Depends
-from fastapi_users import fastapi_users, FastAPIUsers
+from fastapi_users import FastAPIUsers
 from pydantic import BaseModel, Field
 
-from auth.auth import auth_backend
-from auth.manager import get_user_manager
-from auth.schemas import UserRead, UserCreate
+from src.auth.auth import auth_backend
+from src.auth.manager import get_user_manager
+from src.auth.schemas import UserRead, UserCreate
 
 app = FastAPI(
     title="Trading App"
